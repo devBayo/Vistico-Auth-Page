@@ -22,33 +22,29 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(
-      to bottom right,
-      #2c7faf54,
-      #5690b94f
-    ),
+  background: linear-gradient(to bottom right, #2c7faf54, #5690b94f),
     url('bg-img.jpg') center center/cover;
   height: 100vh;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
 }
 
 main {
-  height: 60vh;
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
+/* Header */
 header {
   width: 100%;
+  background-color: #203550;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: #203550;
-  padding: 2.5rem 2rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  display: flex;
   align-items: center;
 }
 
@@ -68,7 +64,26 @@ header {
   font-weight: 700;
 }
 
-a:link, a:visited{
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+a:link,
+a:visited {
   color: #fff;
   text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 2.5rem 1rem;
+}
+
+a.active {
+  border-bottom: 4px solid #568fb9ff;
+}
+
+/* Main Content */
+.main {
+  height: 50vh;
+  background-color: #fff;
 }
