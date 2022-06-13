@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+  /* CSS HEX */
+  --star-command-blue: #2c7fafff;
+  --blue-ncs: #3191c7ff;
+  --pale-silver: #dccfcdff;
+  --heliotrope-gray: #978793ff;
+  --blue-gray: #568fb9ff;
+  --header: #203550;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+      to bottom right,
+      #2c7faf54,
+      #5690b94f
+    ),
+    url('bg-img.jpg') center center/cover;
+  height: 100vh;
+}
+
+main {
+  height: 60vh;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #203550;
+  padding: 2.5rem 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  background: linear-gradient(to top left, #568fb9ff, #fff);
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+a:link, a:visited{
+  color: #fff;
+  text-decoration: none;
+}
